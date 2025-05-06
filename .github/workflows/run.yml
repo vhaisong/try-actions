@@ -1,0 +1,19 @@
+name: Try Actions
+on:
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  try-actions:
+    runs-on: ubuntu-latest
+    # 指定使用 environment
+    # environment: 
+    #   name: production
+  
+    steps:
+    # - uses: actions/checkout@v3
+      
+    - name: Run Command
+      run: |
+        echo "${{ secrets.AA_A }}"
+        echo "${{ vars.AA_A }}"
+        
