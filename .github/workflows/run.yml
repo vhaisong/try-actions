@@ -6,8 +6,8 @@ jobs:
   try-actions:
     runs-on: ubuntu-latest
     # 指定使用 environment
-    # environment: 
-    #   name: production
+    environment: 
+      name: 测试用
   
     steps:
     # - uses: actions/checkout@v3
